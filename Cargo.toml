@@ -19,5 +19,4 @@ log = "0.4"
 reqwest = { version = "0.11.3", features = ["blocking", "native-tls-vendored"] }
 regex = "1.5.4"
 lazy_static = "1.0"
-futures = "0.3.15"
 quick-js = "0.4.1"
