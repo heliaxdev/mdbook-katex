@@ -197,9 +197,11 @@ impl KatexProcessor {
     ) -> String {
         let mut rendered_content = stylesheet_header.clone();
         // render display equations
-        let content = Self::render_between_delimiters(&raw_content, &macros_txt, "$$", display_opts, false);
+        let content =
+            Self::render_between_delimiters(&raw_content, &macros_txt, "$$", display_opts, false);
         // render inline equations
-        let content = Self::render_between_delimiters(&content, &macros_txt, "$", inline_opts, true);
+        let content =
+            Self::render_between_delimiters(&content, &macros_txt, "$", inline_opts, true);
         rendered_content.push_str(&content);
         rendered_content
     }
